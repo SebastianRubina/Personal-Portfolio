@@ -378,3 +378,16 @@ textarea {
   min-height: 180px;
   font-family: "Mulish", sans-serif;
 }
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .long {
+    width: 100%;
+  }
+}

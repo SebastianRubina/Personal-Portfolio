@@ -7,7 +7,6 @@ let hiringRadio = document.getElementById('hiring');
 form.onsubmit = function(e) {
     if (!form.checkValidity()) {
         e.preventDefault();
-        e.stopPropagation();
         return false;
     }
     else {
@@ -21,4 +20,10 @@ hiringRadio.onchange = function() {
     } else {
         document.querySelector('.hourly').classList.add('hidden');
     }
+}
+
+
+function onSubmitFunction(){
+    let action_src = "http://httpbin.org/post" + document.getElementsByName("name")[0].value;
+    form.action = action_src ;
 }

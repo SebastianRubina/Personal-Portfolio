@@ -104,7 +104,7 @@
         </section>
         <section class="contact">
             <h2 class="contact-title">Contact Me</h2>
-            <form class="contact-form" action="https://httpbin.org" method="post">
+            <form class="contact-form" action="https://httpbin.org/post" method="post">
                     <div class="row">
                     <div class="input-field">
                         <label for="name"><span class="required-field">*</span>Name</label>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="input-field">
                         <label for="postal"><span class="required-field">*</span>Postal Code</label>
-                        <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]" required>
+                        <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
                     </div>
                 </div>
                 <div class="row">
@@ -173,7 +173,7 @@
                 </div>
                 <div class="buttons">
                     <button type="reset">Clear</button>
-                    <button type="submit">Submit</button>
+                    <button type="submit" value="submit">Submit</button>
                 </div>
             </form>
         </section>
