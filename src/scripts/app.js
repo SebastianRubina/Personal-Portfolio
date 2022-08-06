@@ -1,6 +1,9 @@
 let form = document.querySelector('.contact-form');
 
 let hiringRadio = document.getElementById('hiring');
+let commentRadio = document.getElementById('comment');
+let questionRadio = document.getElementById('question');
+
 
 
 
@@ -17,13 +20,17 @@ form.onsubmit = function(e) {
 hiringRadio.onchange = function() {
     if (hiringRadio.checked) {
         document.querySelector('.hourly').classList.remove('hidden');
-    } else {
+    }
+}
+
+commentRadio.onchange = function() {
+    if (commentRadio.checked) {
         document.querySelector('.hourly').classList.add('hidden');
     }
 }
 
-
-function onSubmitFunction(){
-    let action_src = "http://httpbin.org/post" + document.getElementsByName("name")[0].value;
-    form.action = action_src ;
+questionRadio.onchange = function() {
+    if (questionRadio.checked) {
+        document.querySelector('.hourly').classList.add('hidden');
+    }
 }

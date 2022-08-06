@@ -9,6 +9,7 @@
 
 * {
   box-size: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -269,7 +270,7 @@ body {
 }
 
 /* Contact Section */
-.contact {
+#contact {
   color: #252525;
   background-color: var(--text-accent-color);
   padding-block: 5rem;
@@ -306,12 +307,14 @@ body {
   width: calc(300px * 2 + 2rem);
 }
 
-.radio-field {
+.radio-field,
+.checkbox-field {
   display: flex;
   gap: 2rem;
 }
 
-.radio-option {
+.radio-option,
+.checkbox-option {
   display: flex;
 }
 
@@ -339,6 +342,10 @@ textarea {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
 }
 
 button {

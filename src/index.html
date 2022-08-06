@@ -21,11 +21,11 @@
             <h1 class="main-name">Sebastián Rubina</h1>
             <p class="main-title">Airline Pilot / Web Developer</p>
             <div class="link-buttons">
-                <a href="#" class="resume">
+                <a href="files/SebastianRubinaCV.pdf" class="resume" download>
                     <span class="material-symbols-outlined">
                     file_download
                     </span>Resume</a>
-                <a href="#" class="contact">Contact Me</a>
+                <a href="#contact" class="contact">Contact Me</a>
             </div>
         </section>
         <section class="about">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h2 class="contact-title">Contact Me</h2>
             <form class="contact-form" action="https://httpbin.org/post" method="post">
                     <div class="row">
@@ -142,6 +142,12 @@
                         <label for="postal"><span class="required-field">*</span>Postal Code</label>
                         <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
                     </div>
+                </div>
+                <div class="row">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="checkbox" name="within-canada" checked>
+                            <label for="checkbox">I am contacting from within Canada</label>
+                        </div>
                 </div>
                 <div class="row">
                     <div class="radio-field">
